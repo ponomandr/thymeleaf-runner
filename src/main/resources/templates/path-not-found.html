@@ -1,0 +1,10 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<h3>Path not found</h3>
+<p th:text="${path}">/example</p>
+<p>Configured paths:</p>
+<ul>
+    <li th:each="path: ${paths}"><a th:href="${path}" th:text="${path}"></a></li>
+</ul>
+</body>
+</html>
